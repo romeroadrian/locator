@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Locator</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <script src="jquery.js"></script>
+        <script src="http://static.mlstatic.com/org-img/sdk/mercadolibre-1.0.4.js"></script>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+        <script type="text/javascript" src="maps.google.polygon.containsLatLng.js"></script>
+        <script type="text/javascript" src="string.js"></script>
+        <script src="locator.js"></script>
+    </head>
+    <body>
+        <p>Locator</p>
+        <div>
+          <button id="remove_last">Remove last point</button>
+          <button id="clear_polygon">Clear polygon</button>
+          <button id="save_polygon">Save polygon</button>
+          <button id="load_polygon">Load polygon</button>
+          <button id="load_meli">Load from MELI</button>
+          <button id="load_zonaprop">Load from ZonaProp</button>
+          <button id="load_local">Load from local storage</button>
+          <span id="status"></span>
+          Geocoding queue size:
+          <span id="queue_size"></span>
+        </div>
+        <div>
+          <label for="price">Price</label>
+          <input id="price" type="text" name="price" value="3000"/>
+        </div>
+        <div id="map" style="width:1000px;height:800px; float:left;"></div>
+        <div id="logger" style="width:500px;height:800px; float:left;margin-left:10px;border:2px solid;overflow:scroll;"></div>
+        <div style="clear:both;"></div>
+    </body>
+</html>
